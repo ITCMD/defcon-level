@@ -5,7 +5,7 @@
 
 ​    This Program is designed for use with the unofficial Defcon Warning System (https://defconwarningsystem.com/ ). It queries the status and freaks the heck out if it goes down to Defcon One.
 
-​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. Discussion on this can be found [here](https://www.defconwarningsystem.com/phpBB3/viewtopic.php?f=24&t=13798). While most suspicions were put to rest, this program still exists as an alternative. This code is completely open source. Their program is a bit more subtle, and it also checks for tweets by the Defcon Warning System. It can be found [here](https://defconwarningsystem.com/links-tools/#Applications).
+​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. Discussion on this can be found [here](https://www.defconwarningsystem.com/phpBB3/viewtopic.php?f=24&t=13798). While most suspicions were put to rest, this program still exists as an alternative. This code is completely open source. However, their program is a bit more polished and subtle, and it also checks for tweets by the Defcon Warning System. It can be found [here](https://defconwarningsystem.com/links-tools/#Applications).
 
 
 #### <u>**How it Works:**</u>
