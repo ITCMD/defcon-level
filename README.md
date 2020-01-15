@@ -12,9 +12,11 @@
 
 ​    This program queries the defconwarningsystem.com's Defcon level every ten minutes using [winhttpjs](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat), and reacts depending on the level with an alert sound, and an update on screen. If the level goes down to one, it will turn up the volume using [jscript](https://stackoverflow.com/a/22895700/7872447) (to make sure you hear the alert) and play the alert until you close the program. It will also read the Defcon status out loud for both Defcon two and one.
 
-​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from rem to anything else. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script.
+​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from `rem` to their wanted command. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script.
 
 
+#### <u>**Installation:**</u>
+​    To install, simply download all of the files in this folder and run "Defcon-level.bat" You can create a shortcut to the script and place it in the folder `shell:startup` to have the program automatically run.
 
 #### <u>Known Issues:</u>
 
