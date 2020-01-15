@@ -5,13 +5,12 @@
 
 ​    This Program is designed for use with the unofficial Defcon Warning System (https://defconwarningsystem.com/ ). It queries the status and freaks the heck out if it goes down to Defcon One.
 
-​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. This code is completely open source.
-
+​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. Discussion on this can be found [here](https://www.defconwarningsystem.com/phpBB3/viewtopic.php?f=24&t=13798). While most suspicions were put to rest, this program still exists as an alternative. This code is completely open source. Their program is a bit more subtle, and it also checks for tweets by the Defcon Warning System. It can be found [here](https://defconwarningsystem.com/links-tools/#Applications)
 
 
 #### <u>**How it Works:**</u>
 
-​    This program queries the defconwarningsystem.com's Defcon level using [winhttpjs](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat), and reacts depending on the level with an alert sound, and an update on screen. If the level goes down to one, it will turn up the volume using [jscript](https://stackoverflow.com/a/22895700/7872447) (to make sure you hear the alert) and play the alert until you close the program. It will also read the Defcon status out loud for both Defcon two and one.
+​    This program queries the defconwarningsystem.com's Defcon level every ten minutes using [winhttpjs](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat), and reacts depending on the level with an alert sound, and an update on screen. If the level goes down to one, it will turn up the volume using [jscript](https://stackoverflow.com/a/22895700/7872447) (to make sure you hear the alert) and play the alert until you close the program. It will also read the Defcon status out loud for both Defcon two and one.
 
 ​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from rem to anything else. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script.
 
