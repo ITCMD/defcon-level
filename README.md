@@ -1,6 +1,8 @@
 # defcon-level
 # Defcon-Warning-System Level Detection Tool (bat/jscript/vbscript tool)
 
+![](https://i.imgur.com/P4cFzUJ.png)
+
 ​    This Program is designed for use with the unofficial Defcon Warning System (https://defconwarningsystem.com/ ). It queries the status and freaks the heck out if it goes down to Defcon One.
 
 ​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. This code is completely open source.
