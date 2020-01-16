@@ -15,6 +15,7 @@
 
 ​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from rem to anything else. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script. **The script now also checks for updates automatically, but will not install them automatically for security.**
 
+   Users may also run the GUI portion of the program individually. The program will check the current defcon status, as well as tell the user if the background service is running or not.
 
 
 #### <u>Known Issues:</u>
