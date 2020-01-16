@@ -1,4 +1,5 @@
 @echo off
+cls
 mode con lines=25 cols=107
 Setlocal EnableDelayedExpansion
 title Defcon Warning System Indicator []
@@ -110,7 +111,7 @@ echo DECON LEVEL IS:
 type 1.ini
 echo.
 echo.
-echo Condition is Red. [1mA nuclear attack is in progress or is considered to be highly likely.[0m
+echo Condition is Red. A nuclear attack is in progress or is considered to be highly likely.
 echo If you do not have a fallout shelter, begin constructing one immediately.
 echo If you have shelter enter it now. Turn on an FM radio to recieve information.
 echo.
@@ -295,7 +296,7 @@ set "file=Alert.wav"
   echo wscript.sleep (int(Sound.currentmedia.duration)+1)*1000 >>speech.vbs
   echo dim speechobject  >>speech.vbs
   echo set speechobject=createobject("sapi.spvoice")   >>speech.vbs
-  echo speechobject.speak "This is the defcon warning system. Defcon Two. Orange. Defcon Two. Orange. Hostilities have or are about to break out. There is a possiblility of nuclear thread. If you live in a populated area and do not have a blast shelter, consider evacuating immediately. Defcon 2. Orange. Visit w w w dot defcon warning system dot com for more information. Defon 2. Orange." >>speech.vbs
+  echo speechobject.speak "This is the defcon warning system. Defcon Two. Orange. Defcon Two. Orange. Hostilities have or are about to break out. There is a possiblility of nuclear thread. If you live in a populated area and do not have a blast shelter, consider evacuating immediately. Defcon 2. Orange. Visit w w w dot defcon warning system dot com for more information. Defcon 2. Orange." >>speech.vbs
 start /MIN speech.vbs
 exit /b
 

@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 rem Script created by SetLucas with ITCMD
 rem https://github.com/ITCMD/defcon-level
 set level=5
-set versionL=1.4
+set versionL=1.5
 set refresh=600
 rem ================================================================
 rem Uncomment the following line to skip checking for missing files.
