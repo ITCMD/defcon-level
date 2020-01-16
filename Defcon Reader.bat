@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 rem Script created by SetLucas with ITCMD
 rem https://github.com/ITCMD/defcon-level
 set level=5
-set versionL=1.3
+set versionL=1.4
 set refresh=600
 rem ================================================================
 rem Uncomment the following line to skip checking for missing files.
@@ -57,7 +57,7 @@ rem checks internet connection
 ping google.com -n 1 >nul
 if "%errorlevel%"=="1" goto nonet
 rem Checks for updates
-call winhttpjs.bat "https://github.com/ITCMD/defcon-level/" -saveto "%cd%\onlinelatest.dat" >nul
+call winhttpjs.bat "https://github.com/ITCMD/defcon-level/raw/master/version.dat" -saveto "%cd%\onlinelatest.dat" >nul
 if not "%errorlevel%"=="200" (
 	rem makes sure download was successful
 	echo query of update level failed.
@@ -68,7 +68,7 @@ if not "%errorlevel%"=="200" (
 find "[%versionL%]" "onlinelatest.dat" >nul 2>nul
 if not "%errorlevel%"=="0" start "" "Defcon GUI.bat" update
 rem Launches and starts the gui on defcon 5.
-start "" "Defcon GUI.bat" defcon 5
+start "" "Defcon GUI.bat" defcon 5 400
 rem checks if the VBScript in shell:startup is pointed to this file.
 if exist "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs" (
 	find "%~0" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
