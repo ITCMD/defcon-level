@@ -1,9 +1,11 @@
 # Defcon Level (Version 2)
 # Defcon-Warning-System Level Detection Tool (bat/jscript/vbscript tool)
 
-![](https://i.imgur.com/P4cFzUJ.png)
+![](https://i.imgur.com/EjNVdGJ.png)
 
-​    This Program is designed for use with the unofficial Defcon Warning System (https://defconwarningsystem.com/ ). It queries the status and freaks the heck out if it goes down to Defcon One.
+######   More Screenshots below!
+
+  This Program is designed for use with the unofficial Defcon Warning System (https://defconwarningsystem.com/ ). It queries the status and freaks the heck out if it goes down to Defcon One.
 
 ​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. These were resolved, however this remains as an open source alternative.
 
@@ -43,3 +45,21 @@
 - Alert.Wav from Defcon Warning System: https://defconwarningsystem.com/  used to make an alert sound
 - Winhttpjs.bat by npockmaka:  https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat  used to query status
 - CMDS.bat by ITCMD https://github.com/ITCMD/CMDS
+
+
+
+### More Screenshots:
+
+Running `Defcon GUI.bat` directly to check status:
+
+![](https://i.imgur.com/o2pv6Ir.gif)
+
+Other Automatic Defcon Levels:
+
+![](https://i.imgur.com/QudDVTW.png)
+
+![](https://i.imgur.com/MUis0uc.png)
+
+![](https://i.imgur.com/9Y5jsGt.png)
+
+![](https://i.imgur.com/eLn09BX.png)
