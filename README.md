@@ -1,4 +1,4 @@
-# defcon-level
+# Defcon Level (Version 2)
 # Defcon-Warning-System Level Detection Tool (bat/jscript/vbscript tool)
 
 ![](https://i.imgur.com/P4cFzUJ.png)
@@ -11,17 +11,23 @@
 
 #### <u>**How it Works:**</u>
 
-​    This program queries the defconwarningsystem.com's Defcon level using [winhttpjs](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat), and reacts depending on the level with an alert sound, and an update on screen. If the level goes down to one, it will turn up the volume using [jscript](https://stackoverflow.com/a/22895700/7872447) (to make sure you hear the alert) and play the alert until you close the program. It will also read the Defcon status out loud for both Defcon two and one.
+​    This program queries the defconwarningsystem.com's Defcon level using [winhttpjs](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/winhttpjs.bat), and reacts depending on the level with an alert sound, and an update on screen. If the level goes down to one, it will turn up the volume using [jscript](https://stackoverflow.com/a/22895700/7872447) (to make sure you hear the alert) and play the alert until you close the program. It will also read the Defcon status out loud for both Defcon two and one. As of the latest update it runs in the background. In order to have it run on startup you will have to follow the instructions below in Installation.
 
-​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from rem to anything else. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script.
+​	**Users can also run custom commands at any level** by editing the code and changing the variables at the beginning of the script from rem to anything else. It is recommended you use this space to start a program that performs your wanted actions. This way, if they fail, it will not damage this script. **The script now also checks for updates automatically, but will not install them automatically for security.**
 
 
 
 #### <u>Known Issues:</u>
 
-   There is currently only one known issue. The volume up script leaves command prompt windows open after it executes (they are minimized, but still annoying). If anyone knows how to fix this please let me know.
+   None as of now, I fixed them all! Let me know if you find any!
 
+#### <u>Installation:</u>
 
+   Simply download all of the files on this page and place the folder somewhere you want it. Run the script by running the  `DefconWarningSystemLauncher.vbs` file. 
+
+​	If you want the script to run on startup, copy the `DefconWarningSystemLauncher.vbs`  file to the folder: `shell:startup`. Then run the  `DefconWarningSystemLauncher.vbs` file **in the original folder, not the startup folder** one more time, and it should prompt you to link the vbs file to your computer.
+
+​	You can also use the task scheduler to run the `vbs` file mentioned above automatically.
 
 
 

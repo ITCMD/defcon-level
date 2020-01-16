@@ -5,6 +5,7 @@
 @ECHO OFF
 
 cscript /e:jscript "%~f0"
+exit
 
 
 :: JScript portion */
