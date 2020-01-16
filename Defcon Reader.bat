@@ -68,7 +68,7 @@ if not "%errorlevel%"=="200" (
 find "[%versionL%]" "onlinelatest.dat" >nul 2>nul
 if not "%errorlevel%"=="0" start "" "Defcon GUI.bat" update
 rem Launches and starts the gui on defcon 5.
-start "" "Defcon GUI.bat" defcon 5 400
+start "" "Defcon GUI.bat" defcon 5 %refresh%
 rem checks if the VBScript in shell:startup is pointed to this file.
 if exist "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs" (
 	find "%~0" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
