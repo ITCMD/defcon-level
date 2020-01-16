@@ -1,5 +1,5 @@
 @echo off
-mode con lines=45 cols=107
+mode con lines=25 cols=107
 Setlocal EnableDelayedExpansion
 title Defcon Warning System Indicator []
 rem Script created by SetLucas with ITCMD
