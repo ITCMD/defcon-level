@@ -30,9 +30,15 @@ echo [4mDefcon Warning System by ITCMD[0m
 echo.
 echo This program is outdated. Please download the latest version from https://github.com/ITCMD/defcon-level.
 echo Automatic updates are dissabled for this program for security reasons.
+echo,
+echo [4mUpdate features:[0m
+echo.
+type onlinelatest.dat
+echo.
 pause
 start https://github.com/ITCMD/defcon-level
 exit
+
 
 
 :nonet
@@ -41,6 +47,7 @@ echo script will continue to search for a connection.
 goto end
 
 :defcon5
+
 color a0
 echo Defcon level:
 type 5.ini
@@ -152,9 +159,9 @@ echo.
 choice /c yns
 if "%errorlevel%"=="1" (
 	rem creates a vbs file that launches to reader program hidden using the second and third parameters as location and file respectively.
-	echo Set objShell = CreateObject("WScript.Shell") >"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
+	echo Set objShell = CreateObject("WScript.Shell"^) >"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
 	echo objShell.CurrentDirectory = "%cd%" >>"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
-	echo Set oShell = CreateObject("WScript.Shell") >>"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
+	echo Set oShell = CreateObject("WScript.Shell"^) >>"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
 	echo oShell.Run """%cd%\Defcon Reader.bat""", 0 >>"C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DefconWarningSystemLauncher.vbs"
 )
 if "%errorlevel%"=="3" (

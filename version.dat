@@ -1,1 +1,5 @@
-[1.5]
+[1.6]
+
+- Fixed an error with the automatic startup that caused an expected ")" error.
+- Fixed some typos.
+- Updator now has a changelong.
