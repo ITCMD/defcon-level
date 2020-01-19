@@ -34,6 +34,12 @@
 
 
 
+#### <u>Updating:</u>
+
+​	To update, delete all of the files in the defcon-level directory, and download this repo again.
+
+
+
 ###### Disclaimer:
 
    I am not the owner of defconwarningsystem.com. The owner does not take responsibility for your actions based off of the Defcon Warning System's status. All civilians should make educated decisions based on their own knowledge. I, the creator of this program, also do not take any responsibility for your actions in result to the usage of this program.
