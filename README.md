@@ -9,7 +9,7 @@
 
 ​    It is designed to be run minimized on startup. It was created in reaction to some possible malware in the Defcon Warning System's executables, which is not open source. These were resolved, however this remains as an open source alternative.
 
-
+​	**New:** As of version 1.7, you can add a file called `DontDisplayOnStartup.config` in the program's main directory, and the program will not display the current defcon level on startup unless it is below 5.
 
 #### <u>**How it Works:**</u>
 
@@ -37,6 +37,8 @@
 #### <u>Updating:</u>
 
 ​	To update, delete all of the files in the defcon-level directory, and download this repo again.
+
+​	This is until a better update option can be found and created that is also secure.
 
 
 
