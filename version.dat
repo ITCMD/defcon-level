@@ -1,5 +1,8 @@
-[1.6]
+[1.7]
 
-- Fixed an error with the automatic startup that caused an expected ")" error.
-- Fixed some typos.
-- Updator now has a changelong.
+- You can now keep the system from displaying the current level on startup by creating a file called DontDisplayOnStartup.config in the program dir.
+- This is because my mom really didnt like it on her PC
+- I do stuff for her because I love her
+- At least that's what she tells me.
+
+
