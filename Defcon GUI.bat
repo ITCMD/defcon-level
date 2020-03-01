@@ -3,7 +3,7 @@ cls
 mode con lines=25 cols=107
 Setlocal EnableDelayedExpansion
 title Defcon Warning System Indicator []
-rem Script created by SetLucas with ITCMD
+rem Script created by SetLucas with ITCMD!
 rem https://github.com/ITCMD/defcon-level
 rem =======================================================================
 rem Add custom commands below to run commands when a defcon level occurs:
