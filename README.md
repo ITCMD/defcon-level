@@ -26,7 +26,7 @@
 
 #### <u>Installation:</u>
 
-   Simply download all of the files on this page and place the folder somewhere you want it. Run the script by running the  `DefconWarningSystemLauncher.vbs` file. 
+   Simply download the latest release from the [releases page](https://github.com/ITCMD/defcon-level/releases), and extract the files. Take the folder and place it somewhere in which it will be convenient to leave running. Run the script by running the  `DefconWarningSystemLauncher.vbs` file. 
 
 ​	If you want the script to run on startup, copy the `DefconWarningSystemLauncher.vbs`  file to the folder: `shell:startup`. Then run the  `DefconWarningSystemLauncher.vbs` file **in the original folder, not the startup folder** one more time, and it should prompt you to link the vbs file to your computer.
 
