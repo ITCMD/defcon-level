@@ -4,8 +4,9 @@ title Defcon WS background service and launcher []
 setlocal EnableDelayedExpansion
 rem Script created by SetLucas with ITCMD
 rem https://github.com/ITCMD/defcon-level
+rem we love you lookie-loos. Enjoy my code!
 set level=5
-set versionL=1.7
+set versionL=1.8
 set refresh=600
 rem ================================================================
 rem Uncomment the following line to skip checking for missing files.
@@ -62,6 +63,7 @@ if not "%errorlevel%"=="200" (
 	rem makes sure download was successful
 	echo query of update level failed.
 	echo report error on: https://github.com/ITCMD/defcon-level
+	echo could not connect to github >> crash.log
 	pause
 	exit /b
 )
@@ -79,6 +81,9 @@ if exist "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Progr
 	)
 )
 :continue
+rem tests connection
+ping google.com -n 1 >nul
+if "%errorlevel%"=="1" goto nocon
 rem downloads defcon status
 call winhttpjs.bat "https://defconwarningsystem.com/code.dat" -saveto "%cd%\defconlevel.dat" >nul
 if not "%errorlevel%"=="200" (
@@ -86,6 +91,7 @@ if not "%errorlevel%"=="200" (
 	echo query of defcon level failed.
 	echo visit www.defconwarningsystem.com
 	echo report error on: https://github.com/ITCMD/defcon-level
+	echo could not connect to defconwarningsystem.com error: %errorlevel% >> crash.log
 	pause
 	exit /b
 )
@@ -134,6 +140,12 @@ if %errorlevel%==1 (
 	timeout /t %refresh%
 	goto nonet
 )
-goto skiptest
+goto skipchecks
 
-
+:nocon
+ping google.com -n 1 >nul
+if %errorlevel%==1 (
+	timeout /t %refresh%
+	goto nocon
+)
+goto continue
