@@ -25,6 +25,8 @@ goto :LocalCheck
 
 
 :update
+
+title Defcon Warning System Update Available
 cls
 echo [4mDefcon Warning System by ITCMD[0m
 echo.
