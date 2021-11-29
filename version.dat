@@ -1,4 +1,4 @@
-[1.9]
+[2.0]
 
 - New Feature: No longer alters of defcon 4 or 3 on first launch of system.
 - Bug Fix: Deletes Version File upon Checking Software Version

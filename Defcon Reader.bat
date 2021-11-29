@@ -7,7 +7,7 @@ rem https://github.com/ITCMD/defcon-level
 rem we love you lookie-loos. Enjoy my code!
 set level=5
 set startup=true
-set versionL=1.9
+set versionL=2.0
 set refresh=600
 rem ================================================================
 rem Uncomment the following line to skip checking for missing files.
