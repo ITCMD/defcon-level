@@ -6,7 +6,8 @@ rem Script created by SetLucas with ITCMD
 rem https://github.com/ITCMD/defcon-level
 rem we love you lookie-loos. Enjoy my code!
 set level=5
-set versionL=1.8
+set startup=true
+set versionL=1.9
 set refresh=600
 rem ================================================================
 rem Uncomment the following line to skip checking for missing files.
@@ -61,7 +62,7 @@ rem Checks for updates
 call winhttpjs.bat "https://github.com/ITCMD/defcon-level/raw/master/version.dat" -saveto "%cd%\onlinelatest.dat" >nul
 if not "%errorlevel%"=="200" (
 	rem makes sure download was successful
-	echo query of update level failed.
+	echo query of software update failed.
 	echo report error on: https://github.com/ITCMD/defcon-level
 	echo could not connect to github >> crash.log
 	pause
@@ -69,7 +70,7 @@ if not "%errorlevel%"=="200" (
 )
 find "[%versionL%]" "onlinelatest.dat" >nul 2>nul
 if not "%errorlevel%"=="0" start "" "Defcon GUI.bat" update
-if "%errorlevel%"=="0" del /f /q onlinelaest.dat
+if "%errorlevel%"=="0" del /f /q onlinelatest.dat
 rem Launches and starts the gui on defcon 5 if the skip file doesn't exist.
 if not exist "DontDisplayOnStartup.config" start "" "Defcon GUI.bat" defcon 5 %refresh% launch
 rem checks if the VBScript in shell:startup is pointed to this file.
@@ -106,7 +107,7 @@ if "%defconlevel%"=="4" set refresh=300 & goto defcontest
 if "%defconlevel%"=="3" set refresh=100 & goto defcontest
 if "%defconlevel%"=="2" set refresh=60 & goto defcontest
 if "%defconlevel%"=="1" set refresh=10 & goto defcontest
-echo An error has occured:
+echo An error has occured. Defcon status read:
 echo.
 type "defconlevel.dat"
 echo.
@@ -127,10 +128,11 @@ if not "%defconlevel%"=="%level%" (
 	)
 	rem starts a new window with current level
 	rem Putting this comment here fixes an error.
-	start "" "Defcon GUI.bat" defcon %defconlevel% %refresh% seconds.
+	start "" "Defcon GUI.bat" defcon %defconlevel% %refresh% %startup%
 	set level=%defconlevel%
 )
-rem waits 10 minutes
+rem waits 10 minutes or set time
+set startup=false
 timeout /t %refresh%
 goto :continue
 

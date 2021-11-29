@@ -1,5 +1,7 @@
-[1.8]
+[1.9]
 
-- Bug Fix: No longer crashes the reader if you have no internet connection.
+- New Feature: No longer alters of defcon 4 or 3 on first launch of system.
+- Bug Fix: Deletes Version File upon Checking Software Version
+- Bug Fix: Typo Fixes
 
 

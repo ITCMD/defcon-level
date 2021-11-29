@@ -58,8 +58,7 @@ goto :end
 
 :defcon4
 cls
-start /MIN "" "volumeup.bat"
-call :Alert
+if not "%~4"=="true" call :Alert
 color 1f
 echo Defcon level:
 type 4.ini
@@ -70,7 +69,7 @@ goto :end
 
 :defcon3
 color e0
-start /MIN "" "volumeup.bat"
+if not "%~4"=="true" start /MIN "" "volumeup.bat"
 echo Defcon level:
 type 3.ini
 echo.
@@ -173,9 +172,9 @@ exit
 cls
 echo Running the Defcon checker . . .
 call cmds.bat /ts "Defcon WS background service and launcher []"
-if "%errorlevel%"==1 (
-	echo The DWS service is [4mnot[0m running in the background!
-	echo consider launching it so it may update you of changes!
+if "%errorlevel%"=="1" (
+	echo The DWS service is [4mnot[0m running in the background.
+	echo consider launching it so it may update you of changes.
 ) ELSE (
 	echo [90mThe Defcon Warning System background service is running. It should update you of any issues.[0m
 )
@@ -216,30 +215,35 @@ echo Defcon Level:
 if "%defconlevel%"=="5" (
 	color 0a
 	type 5.ini
+	echo.
 	echo Condition is green. all clear.
 )
 if "%defconlevel%"=="4" (
 	color 1f
 	type 4.ini
+	echo.
 	echo Condition is blue. Non-Peactime.
-	echo visit www.defconwarningsystem.com for more information.
+	echo visit defconwarningsystem.com for more information.
 )
 if "%defconlevellevel%"=="3" (
 	color e0
 	type %defconlevel%.ini
+	echo.
 	echo Condition is Yellow. Events of concern are occuring in the world theatre.
-	echo visit www.defconwarningsystem.com for more information.
+	echo visit defconwarningsystem.com for more information.
 )
 if "%defconlevel%"=="2" (
 	color 60
 	type %defconlevel%.ini
+	echo.
 	echo Condition is Orange. There is a strong possibility of nuclear attack.
 	echo Prepare for a nuclear strike. Consider evacuation if you are close to
 	echo a major city or military base.
-	echo visit www.defconwarningsystem.com for more information.
+	echo visit defconwarningsystem.com for more information.
 )
 if "%defconlevel%"=="1" (
 	type %defconlevel%.ini
+	echo.
 	color c0
 	echo Condition is Red! Nuclear war has or is likely to occur!
 	echo visit www.defconwarningsystem.com for more information.
@@ -247,9 +251,10 @@ if "%defconlevel%"=="1" (
 echo ============================================================================================
 
 echo Press any key to launch website . . .
+echo Please note that during times of changes the website may experience high traffic.
 pause >nul
 
-start www.defconwarningsystem.com/
+start https://defconwarningsystem.com/
 echo Press any key to close . . .
 pause >nul
 exit /b
