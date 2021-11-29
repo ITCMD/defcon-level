@@ -77,7 +77,7 @@ echo Condition is Yellow. Events of concern are occuring in the world theatre.
 echo There are no known immediate nuclear threats, however the situation is considered fluid.
 echo Please visit www.defconwarningsystem.com for more information.
 echo If you live in or near a city, and do not have a blast shelter make evacuation plans.
-echo If you doo not have a fallout shelter, consider constructing one and begin collecting water.
+echo If you do not have a fallout shelter, consider constructing one and begin collecting water.
 echo.
 echo Please visit www.defconwarningsystem.com for more information.
 echo For shelter instructions visit https://www.defconwarningsystem.com/documents/
